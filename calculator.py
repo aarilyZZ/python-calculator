@@ -13,6 +13,10 @@ class Calculator:
 
     def divide(self, a, b):
         result = 0
+        if b == 0:
+            return False
+        if a == 0:
+            return 0
         while a > b:
             a = self.subtract(a, b)
             result += 1
